@@ -1,0 +1,36 @@
+{
+	"name": "hunglv-fs/laravel5-telescope",
+	"description": "Telescope for Laravel 5.0: requests, queries, queue jobs, artisan commands, exceptions, logs, cache and an N+1 report, for legacy apps that cannot run laravel/telescope.",
+	"keywords": ["laravel", "laravel5", "telescope", "debugging", "profiler", "n-plus-one", "queue", "legacy", "debugbar"],
+	"homepage": "https://github.com/hunglv-fs/laravel5-telescope",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "HungLV",
+			"email": "hunglecubsvietnam@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"illuminate/support": "5.0.*",
+		"illuminate/database": "5.0.*"
+	},
+	"require-dev": {
+		"illuminate/view": "5.0.*",
+		"illuminate/filesystem": "5.0.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"HungLv\\Telescope\\": "src/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-main": "1.x-dev"
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"minimum-stability": "stable"
+}
