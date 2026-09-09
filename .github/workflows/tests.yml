@@ -33,5 +33,8 @@ jobs:
           php-version: '7.0'
           extensions: mbstring, json
           coverage: none
-      - run: composer install --no-interaction --prefer-dist --ignore-platform-reqs
+      # No --ignore-platform-reqs on purpose: it lets Composer resolve
+      # dependencies against a newer PHP than the one running, which pulls in
+      # a symfony/polyfill-mbstring built for PHP 7.2 and fatals on autoload.
+      - run: composer install --no-interaction --prefer-dist
       - run: php tests/views.php
